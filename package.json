@@ -1,0 +1,15 @@
+{
+  "name": "images-la2050",
+  "version": "0.0.1",
+  "description": "",
+  "author": "jim@jimthoburn.com",
+  "scripts": {
+    "images:generate": "gulp"
+  },
+  "devDependencies": {
+    "concurrent-transform": "^1.0.0",
+    "gulp": "^4.0.2",
+    "gulp-image-resize": "^0.13.1",
+    "gulp-imageoptim": "^1.0.9"
+  }
+}

@@ -20,3 +20,36 @@ https://docs.netlify.com/large-media/setup/
 
 ## Example setup
 https://github.com/jimthoburn/netlify-lfs-example/blob/master/README.md
+
+## Generating image sizes
+
+1. Install GraphicsMagick  
+http://www.graphicsmagick.org
+
+2. Install ImageOptim  
+https://imageoptim.com
+
+3. Install dependencies
+```
+npm install
+```
+
+4. Choose images
+
+Choose which folder of images you want to optimize by editing _gulpfile.js_
+
+```
+sourceImagePath     = './challenge/2020/learn/original';
+generatedImagePath  = './challenge/2020/learn';
+```
+
+5. Generate
+
+```
+npm run images:generate
+```
+
+6. Optimize
+
+Open the new images in ImageOptim
+
