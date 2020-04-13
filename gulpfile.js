@@ -67,9 +67,10 @@ function generateNext() { // https://hacks.mozilla.org/2015/05/es6-in-depth-dest
 }
 
 gulp.task("default", function() {
+
   // sizesCursor = 0;
-  // sourceImagePath     = './challenge/2020/learn/original';
-  // generatedImagePath  = './challenge/2020/learn';
+  // sourceImagePath     = './challenge/2020/connect/original';
+  // generatedImagePath  = './challenge/2020/connect';
   // generateNext();
 
   // sizesCursor = 0;
@@ -78,17 +79,17 @@ gulp.task("default", function() {
   // generateNext();
 
   // sizesCursor = 0;
-  // sourceImagePath     = './challenge/2020/play/original';
-  // generatedImagePath  = './challenge/2020/play';
+  // sourceImagePath     = './challenge/2020/learn/original';
+  // generatedImagePath  = './challenge/2020/learn';
   // generateNext();
-
-  sizesCursor = 0;
-  sourceImagePath     = './challenge/2020/connect/original';
-  generatedImagePath  = './challenge/2020/connect';
-  generateNext();
 
   // sizesCursor = 0;
   // sourceImagePath     = './challenge/2020/live/original';
   // generatedImagePath  = './challenge/2020/live';
+  // generateNext();
+
+  // sizesCursor = 0;
+  // sourceImagePath     = './challenge/2020/play/original';
+  // generatedImagePath  = './challenge/2020/play';
   // generateNext();
 });
