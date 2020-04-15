@@ -82,7 +82,7 @@ gulp.task("default", function() {
   // sourceImagePath     = './challenge/2020/learn/original';
   // generatedImagePath  = './challenge/2020/learn';
   // generateNext();
-
+  // 
   // sizesCursor = 0;
   // sourceImagePath     = './challenge/2020/live/original';
   // generatedImagePath  = './challenge/2020/live';
