@@ -18,7 +18,7 @@ https://images.la2050.org/challenge/assets/images/2019/learn/2048-wide/yes-we-ca
 
 ## How to make changes
 
-The files in the repository are stored and published by [Netlify](https://www.netlify.com/), using the [Large Media](https://docs.netlify.com/large-media/overview/) feature. To obtain and make changes to the files, you’ll need access to LA2050’s Netlify account and you will also need to set up [Git LFS](https://git-lfs.github.com/) and the [Netlify CLI](https://docs.netlify.com/large-media/setup/) tool.
+The files in the repository are stored and published by [Netlify](https://www.netlify.com/), using the [Large Media](https://docs.netlify.com/large-media/overview/) feature. To obtain and make changes to the files, you’ll need access to LA2050’s Netlify account. You will also need to set up [Git LFS](https://git-lfs.github.com/) and the [Netlify CLI](https://docs.netlify.com/large-media/setup/) tool.
 
 ### The basic steps are:
 
