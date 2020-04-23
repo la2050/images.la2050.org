@@ -4,13 +4,17 @@ This is a repository of images used on the My LA2050 Grants Challenge.
 
 https://images.la2050.org
 
-The folders in this project are named to match the URLs for each project on the challenge website. The files are named after their original URL, excluding the protocol (http). For example:
+The folders in this repository are named to match the URLs for each proposal on the challenge website. The files are named after their original URL, excluding the protocol (http). For example:
 
-The URL for Yes We Can World Foundation is:  
+The URL for _Yes We Can World Foundation_ is:  
 https://challenge.la2050.org/2019/learn/yes-we-can-world-foundation/
 
 And the image URL is:  
 https://images.la2050.org/challenge/assets/images/2019/learn/2048-wide/yes-we-can-world-foundation.jpg
+
+## Deployment status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/decd94cf-2950-40df-886c-da6ff36e6605/deploy-status)](https://app.netlify.com/sites/images-la2050/deploys)
 
 ## Git LFS
 https://git-lfs.github.com/
