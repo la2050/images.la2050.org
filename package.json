@@ -1,15 +1,18 @@
 {
-  "name": "images-la2050",
-  "version": "0.0.1",
-  "description": "",
-  "author": "jim@jimthoburn.com",
+  "engines": {
+    "node": ">=14.15.3"
+  },
+  "type": "module",
   "scripts": {
-    "images:generate": "gulp"
+    "create:images": "node images.js",
+    "optimize:images": "node images-optimize.js",
+    "create": "npm run create:images && npm run optimize:images"
   },
   "devDependencies": {
-    "concurrent-transform": "^1.0.0",
-    "gulp": "^4.0.2",
-    "gulp-image-resize": "^0.13.1",
-    "gulp-imageoptim": "^1.0.9"
+    "@squoosh/cli": "^0.6.0",
+    "chalk": "^4.1.0",
+    "image-size": "^0.9.3",
+    "imageoptim-cli": "^3.0.2",
+    "mkdirp": "^1.0.4"
   }
 }
