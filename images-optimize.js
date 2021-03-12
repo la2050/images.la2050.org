@@ -14,7 +14,7 @@ function optimizeNextSize() {
   console.log(`Optimizing images at size: ${size}`);
 
   // TRICKY: Use “size” as part of the path to avoid optimizing the “original” images
-  exec(`imageoptim 'public/**/${size}*/*.jpeg'`, (err, stdout, stderr) => {
+  exec(`imageoptim 'public/**/${size}*/*.jpg'`, (err, stdout, stderr) => {
     if (err) {
       // node couldn't execute the command
       return;

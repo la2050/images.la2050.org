@@ -217,8 +217,8 @@ function generateOneImage({ width, aspectRatio, sourceFile, destinationFolder })
     }
 
     // JPEG
-    if (fs.existsSync(`${destinationFolder}/${fileNameBase}.jpeg`) && overwrite !== true) {
-      console.log(`${destinationFolder}/${fileNameBase}.jpeg already exists. Skipping…`);
+    if (fs.existsSync(`${destinationFolder}/${fileNameBase}.jpg`) && overwrite !== true) {
+      console.log(`${destinationFolder}/${fileNameBase}.jpg already exists. Skipping…`);
     } else {
       console.log(``);
       console.log(`🖼  Generating JPEG`);
@@ -226,7 +226,7 @@ function generateOneImage({ width, aspectRatio, sourceFile, destinationFolder })
       await doCommand(`${imageMagick} ${ [
         ...imageMagickOptions,
         `-quality ${80}`,
-        `'${destinationFolder}/${fileNameBase}.jpeg'`,
+        `'${destinationFolder}/${fileNameBase}.jpg'`,
       ].join(" ") }`);
     }
 
