@@ -2,3 +2,14 @@
 # https://docs.netlify.com/configure-builds/file-based-configuration/#sample-file
 [build]
   publish = "public"
+
+# Temporary redirect for 2021 test data
+# https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+[[redirects]]
+  from = "/challenge/2021/*"
+  to = "/challenge/2020/:splat"
+  status = 302
+  # force = true
+  # query = {path = ":path"}
+  # conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
+  # headers = {X-From = "Netlify"}
