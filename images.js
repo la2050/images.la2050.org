@@ -10,24 +10,7 @@ const startTime = Date.now();
 
 const configData  = JSON.parse(fs.readFileSync("./config.json", "utf8"));
 
-const albums = [
-  'public/challenge/2021/connect',
-  'public/challenge/2021/create',
-  'public/challenge/2021/learn',
-  'public/challenge/2021/live',
-  'public/challenge/2021/play',
-];
-
-const SIZES = [
-  //16,
-  384,
-  512,
-  768,
-  1024,
-  1536,
-  2048,
-  //6000,
-];
+const SIZES = configData.sizes;
 
 const ASPECT_RATIO = '10/8';
 
@@ -326,7 +309,7 @@ async function generateImages({ width, imagePath }) {
       const sourceFile = files[index];
       const pathBits = sourceFile.split("/");
       const fileName = pathBits[pathBits.length - 1];
-      console.log(chalk.cyan(`${nextFolderCursor} of ${albums.length} albums`));
+      console.log(chalk.cyan(`${nextFolderCursor} of ${configData.albums.length} albums`));
       console.log(chalk.cyan(`${nextCursor} of ${SIZES.length} sizes`));
       console.log(chalk.cyan(`${index + 1} of ${files.length} pictures`));
       await generateOneImage({
@@ -366,11 +349,11 @@ function generateNextSize() {
 
 let nextFolderCursor = 0;
 function generateNextFolder() {
-  if (nextFolderCursor < albums.length) {
-    console.log('generateNextFolder: ' + nextFolderCursor + ' :: ' + albums[nextFolderCursor]);
+  if (nextFolderCursor < configData.albums.length) {
+    console.log('generateNextFolder: ' + nextFolderCursor + ' :: ' + configData.albums[nextFolderCursor]);
 
     nextCursor = 0;
-    nextImagePath = `./${ albums[nextFolderCursor] }`;
+    nextImagePath = `./${ configData.albums[nextFolderCursor] }`;
     generateNextSize();
 
     nextFolderCursor++;

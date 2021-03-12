@@ -1,16 +1,10 @@
 
+import fs from "fs";
 import { exec } from "child_process";
 
-const SIZES = [
-  // 16,
-  384,
-  512,
-  768,
-  1024,
-  1536,
-  2048,
-  // 6000
-];
+const configData  = JSON.parse(fs.readFileSync("./config.json", "utf8"));
+
+const SIZES = configData.sizes;
 
 let nextSizeIndex = 0;
 
@@ -19,8 +13,8 @@ function optimizeNextSize() {
 
   console.log(`Optimizing images at size: ${size}`);
 
-  // https://stackoverflow.com/questions/20643470/execute-a-command-line-binary-with-node-js#answer-20643568
-  exec(`imageoptim 'public/challenge/2021/**/${size}-wide*/*.jpeg'`, (err, stdout, stderr) => {
+  // TRICKY: Use “size” as part of the path to avoid optimizing the “original” images
+  exec(`imageoptim 'public/**/${size}*/*.jpeg'`, (err, stdout, stderr) => {
     if (err) {
       // node couldn't execute the command
       return;

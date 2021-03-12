@@ -38,8 +38,8 @@ https://github.com/jimthoburn/netlify-lfs-example/blob/master/README.md
 
 ## Generating image sizes
 
-1. Install GraphicsMagick  
-http://www.graphicsmagick.org
+1. Install ImageMagick
+https://imagemagick.org
 
 2. Install ImageOptim  
 https://imageoptim.com
@@ -51,20 +51,20 @@ npm install
 
 4. Choose images
 
-Choose which folder of images you want to optimize by editing _gulpfile.js_
+Choose which folders of images you want to create by editing _config.json_
 
 ```
-sourceImagePath     = './challenge/2020/learn/original';
-generatedImagePath  = './challenge/2020/learn';
+"albums": [
+  "public/challenge/2021/connect",
+  "public/challenge/2021/create",
+  "public/challenge/2021/learn",
+  "public/challenge/2021/live",
+  "public/challenge/2021/play"
+]
 ```
 
 5. Generate
 
 ```
-npm run images:generate
+npm run create
 ```
-
-6. Optimize
-
-Open the new images in ImageOptim
-

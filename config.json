@@ -1,4 +1,18 @@
 {
+  "albums": [
+    "public/challenge/2021/connect",
+    "public/challenge/2021/create",
+    "public/challenge/2021/learn",
+    "public/challenge/2021/live"
+  ],
+  "sizes": [
+    384,
+    512,
+    768,
+    1024,
+    1536,
+    2048
+  ],
   "imageFormats": {
     "webp": false,
     "avif": false
