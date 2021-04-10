@@ -6,6 +6,11 @@ import sizeOf from "image-size";
 import chalk  from "chalk";
 
 const overwrite = false; // Set this “true” to re-generate existing image files.
+const forceOverwriteFiles = {
+  // "on-the-go-la": 1,
+  // "sloane-stephens-foundation": 1,
+};
+
 const startTime = Date.now();
 
 const configData  = JSON.parse(fs.readFileSync("./config.json", "utf8"));
@@ -217,7 +222,7 @@ function generateOneImage({ width, aspectRatio, sourceFile, destinationFolder })
     }
 
     // JPEG
-    if (fs.existsSync(`${destinationFolder}/${fileNameBase}.jpg`) && overwrite !== true) {
+    if (fs.existsSync(`${destinationFolder}/${fileNameBase}.jpg`) && overwrite !== true && !forceOverwriteFiles[fileNameBase]) {
       console.log(`${destinationFolder}/${fileNameBase}.jpg already exists. Skipping…`);
     } else {
       console.log(``);
@@ -233,7 +238,7 @@ function generateOneImage({ width, aspectRatio, sourceFile, destinationFolder })
     if (width > 16) { // Skip WebP and AVIF for the smallest size (16px), since it’s only used for preview images
 
       // WebP
-      if (fs.existsSync(`${destinationFolder}/${fileNameBase}.webp`) && overwrite !== true) {
+      if (fs.existsSync(`${destinationFolder}/${fileNameBase}.webp`) && overwrite !== true && !forceOverwriteFiles[fileNameBase]) {
         console.log(`${destinationFolder}/${fileNameBase}.webp already exists. Skipping…`);
       } else {
         if (configData.imageFormats && configData.imageFormats.webp) {
@@ -249,7 +254,7 @@ function generateOneImage({ width, aspectRatio, sourceFile, destinationFolder })
         }
       }
       
-      if (fs.existsSync(`${destinationFolder}/${fileNameBase}.avif`) && overwrite !== true) {
+      if (fs.existsSync(`${destinationFolder}/${fileNameBase}.avif`) && overwrite !== true && !forceOverwriteFiles[fileNameBase]) {
         console.log(`${destinationFolder}/${fileNameBase}.avif already exists. Skipping…`);
       } else {
         if (configData.imageFormats && configData.imageFormats.avif) {
