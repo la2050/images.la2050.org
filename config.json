@@ -3,7 +3,8 @@
     "public/challenge/2021/connect",
     "public/challenge/2021/create",
     "public/challenge/2021/learn",
-    "public/challenge/2021/live"
+    "public/challenge/2021/live",
+    "public/challenge/2021/play"
   ],
   "sizes": [
     384,
