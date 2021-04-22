@@ -12,6 +12,8 @@ const forceOverwriteFiles = {
   // "lynsteb-inc": 1,
   // "ruckusroots": 1,,
   // "crayon-collection": 1,
+  // "our-house-grief-support-center": 1,
+  // "sola-i-can-foundation": 1,
 };
 
 const startTime = Date.now();
