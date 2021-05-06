@@ -15,6 +15,7 @@ const forceOverwriteFiles = {
   // "our-house-grief-support-center": 1,
   // "sola-i-can-foundation": 1,
   // "growing-the-table-a-project-of-tomkat-ranch-educational-foundation": 1,
+  // "integrated-recovery-network": 1,
 };
 
 const startTime = Date.now();
