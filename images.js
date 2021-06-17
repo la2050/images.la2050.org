@@ -16,6 +16,8 @@ const forceOverwriteFiles = {
   // "sola-i-can-foundation": 1,
   // "growing-the-table-a-project-of-tomkat-ranch-educational-foundation": 1,
   // "integrated-recovery-network": 1,
+  // "western-center-on-law-poverty": 1,
+  // "rivet-school": 1,
 };
 
 const startTime = Date.now();
