@@ -18,6 +18,8 @@ const forceOverwriteFiles = {
   // "integrated-recovery-network": 1,
   // "western-center-on-law-poverty": 1,
   // "rivet-school": 1,
+  // "the-seed-school-of-los-angeles-county": 1,
+  // "alliance-in-mentorship-mimentor": 1,
 };
 
 const startTime = Date.now();
