@@ -58,12 +58,20 @@ Choose which folders of images you want to create by editing _config.json_
 
 ```
 "albums": [
-  "public/challenge/2021/connect",
-  "public/challenge/2021/create",
-  "public/challenge/2021/learn",
-  "public/challenge/2021/live",
-  "public/challenge/2021/play"
+  "public/challenge/2022/connect",
+  "public/challenge/2022/create",
+  "public/challenge/2022/learn",
+  "public/challenge/2022/live",
+  "public/challenge/2022/play"
 ]
+```
+
+7. Create a folder named “original” in each category, and add your new images to it:
+```
+public/challenge/2022/connect/original/my-new-image.jpg
+public/challenge/2022/connect/original/my-other-new-image.png
+public/challenge/2022/create/original/yet-other-new-image.jpg
+...
 ```
 
 6. Generate
