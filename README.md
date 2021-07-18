@@ -1,6 +1,6 @@
 # Images for the My LA2050 Grants Challenge
 
-This is a repository of images used on the My LA2050 Grants Challenge.
+This is a repository of images used on the [Grants Challenge](https://challenge.la2050.org/) and [Ideas Archive](https://archive.la2050.org/) websites.
 
 https://images.la2050.org
 
@@ -10,7 +10,7 @@ The URL for _Yes We Can World Foundation_ is:
 https://challenge.la2050.org/2019/learn/yes-we-can-world-foundation/
 
 And the image URL is:  
-https://images.la2050.org/challenge/assets/images/2019/learn/2048-wide/yes-we-can-world-foundation.jpg
+https://images.la2050.org/challenge/2019/learn/2048-wide/yes-we-can-world-foundation.jpg
 
 ## Deployment status
 
