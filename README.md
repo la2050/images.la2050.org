@@ -4,7 +4,7 @@ This is a repository of images used on the [Grants Challenge](https://challenge.
 
 https://images.la2050.org
 
-The folders in this repository are named to match the URLs for each proposal on the challenge website. The files are named after their original URL, excluding the protocol (http). For example:
+The folders in this repository are named to match the URLs for each proposal on the challenge website. The files are named after their original URL. For example:
 
 The URL for _Yes We Can World Foundation_ is:  
 https://challenge.la2050.org/2019/learn/yes-we-can-world-foundation/
