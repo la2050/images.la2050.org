@@ -44,12 +44,15 @@ https://imagemagick.org
 2. Install ImageOptim  
 https://imageoptim.com
 
-3. Install dependencies
+3. Install Node JS
+https://nodejs.org
+
+4. Install dependencies
 ```
 npm install
 ```
 
-4. Choose images
+5. Choose images
 
 Choose which folders of images you want to create by editing _config.json_
 
@@ -63,7 +66,7 @@ Choose which folders of images you want to create by editing _config.json_
 ]
 ```
 
-5. Generate
+6. Generate
 
 ```
 npm run create
